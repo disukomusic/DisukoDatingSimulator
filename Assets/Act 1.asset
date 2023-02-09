@@ -1,0 +1,233 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9183189981888652147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc954e8e7b9fbe4386af7f09201c9f1, type: 3}
+  m_Name: Story Event
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 632, y: -120}
+  ports:
+    keys:
+    - PreviousEvent
+    - NextEvent
+    values:
+    - _fieldName: PreviousEvent
+      _node: {fileID: -9183189981888652147}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextEvent
+        node: {fileID: 8385273675932798692}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextEvent
+      _node: {fileID: -9183189981888652147}
+      _typeQualifiedName: DialogueStep, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  NextEvent:
+    Dialogue:
+      name: 
+      dialogue: 
+    Characters: []
+    options:
+      Questions: []
+  dialogue:
+    Dialogue:
+      name: 
+      dialogue: 
+    Characters: []
+    options:
+      Questions: []
+--- !u!114 &-3041798273945688831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc954e8e7b9fbe4386af7f09201c9f1, type: 3}
+  m_Name: Story Event
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -24, y: -24}
+  ports:
+    keys:
+    - PreviousEvent
+    - NextEvent
+    values:
+    - _fieldName: PreviousEvent
+      _node: {fileID: -3041798273945688831}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextEvent
+      _node: {fileID: -3041798273945688831}
+      _typeQualifiedName: DialogueStep, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousEvent
+        node: {fileID: 8385273675932798692}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  NextEvent:
+    Dialogue:
+      name: 
+      dialogue: 
+    Characters: []
+    options:
+      Questions: []
+  dialogue:
+    Dialogue:
+      name: 
+      dialogue: 
+    Characters: []
+    options:
+      Questions:
+      - Yes
+      - No
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81f0f7ea3bd105d4fb2b80d07ba9db5d, type: 3}
+  m_Name: Act 1
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -3041798273945688831}
+  - {fileID: 8385273675932798692}
+  - {fileID: -9183189981888652147}
+  - {fileID: 6759027432032976996}
+  currentEvent: {fileID: 0}
+--- !u!114 &6759027432032976996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc954e8e7b9fbe4386af7f09201c9f1, type: 3}
+  m_Name: Story Event
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 632, y: 120}
+  ports:
+    keys:
+    - PreviousEvent
+    - NextEvent
+    values:
+    - _fieldName: PreviousEvent
+      _node: {fileID: 6759027432032976996}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextEvent
+        node: {fileID: 8385273675932798692}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextEvent
+      _node: {fileID: 6759027432032976996}
+      _typeQualifiedName: DialogueStep, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  NextEvent:
+    Dialogue:
+      name: 
+      dialogue: 
+    Characters: []
+    options:
+      Questions: []
+  dialogue:
+    Dialogue:
+      name: 
+      dialogue: 
+    Characters: []
+    options:
+      Questions: []
+--- !u!114 &8385273675932798692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8ed627a2f3c4643878b0072b93038d, type: 3}
+  m_Name: Selection
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 280, y: -8}
+  ports:
+    keys:
+    - PreviousEvent
+    - NextEvent
+    values:
+    - _fieldName: PreviousEvent
+      _node: {fileID: 8385273675932798692}
+      _typeQualifiedName: DialogueOptions, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextEvent
+        node: {fileID: -3041798273945688831}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextEvent
+      _node: {fileID: 8385273675932798692}
+      _typeQualifiedName: Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousEvent
+        node: {fileID: -9183189981888652147}
+        reroutePoints: []
+      - fieldName: PreviousEvent
+        node: {fileID: 6759027432032976996}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  PreviousEvent:
+    Questions: []
+  Mode: 0
