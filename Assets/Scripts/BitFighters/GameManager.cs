@@ -15,8 +15,11 @@ public class GameManager : MonoBehaviour
     
     void Start()
     {
+
         timer.StartTimer();
         timer.OnTimerDone += CompareScores;
+        
+
     }
     
     void CompareScores()
@@ -24,9 +27,10 @@ public class GameManager : MonoBehaviour
         if (player.scoreCounter > enemy.enemyCounter)
         {
             winText.SetActive(true);
-
+            timer.timeText.SetText(" ");
             return;
         }
+        timer.timeText.SetText(" ");
         loseText.SetActive(true);
     }
 }
