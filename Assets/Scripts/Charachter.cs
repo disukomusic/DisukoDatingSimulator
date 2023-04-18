@@ -3,6 +3,7 @@ public class Charachter : MonoBehaviour
 {
     public Sprite portrait;
     public bool isActive;
+    public int id;
     LTDescr tween;
 
     public void MoveTo(Position pos) 

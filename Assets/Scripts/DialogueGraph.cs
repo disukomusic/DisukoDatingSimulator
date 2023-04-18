@@ -5,10 +5,15 @@ using XNode;
 
 [CreateAssetMenu]
 public class DialogueGraph : NodeGraph {
-	public StoryEvent currentEvent;
 
-	public void NextEvent() 
+	public EventNode current;
+
+	public void Continue() 
 	{
-		currentEvent.NextStep();
+		current.MoveNext();
+	}
+	public void Continue(int option)
+	{
+		current.MoveNext(option);
 	}
 }
