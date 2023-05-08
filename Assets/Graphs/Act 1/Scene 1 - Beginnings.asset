@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9202563880944679619
+--- !u!114 &-8449573996443474929
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1272, y: -696}
+  position: {x: -452.29352, y: -837.2605}
   ports:
     keys:
     - enter
@@ -23,28 +23,31 @@ MonoBehaviour:
     - exit3
     values:
     - _fieldName: enter
-      _node: {fileID: -9202563880944679619}
+      _node: {fileID: -8449573996443474929}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: exit
-        node: {fileID: 3250787265118768687}
+        node: {fileID: -4896122945074107719}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
-      _node: {fileID: -9202563880944679619}
+      _node: {fileID: -8449573996443474929}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: enter
+        node: {fileID: -1077615974411102343}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit1
-      _node: {fileID: -9202563880944679619}
+      _node: {fileID: -8449573996443474929}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -53,7 +56,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit2
-      _node: {fileID: -9202563880944679619}
+      _node: {fileID: -8449573996443474929}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -62,159 +65,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit3
-      _node: {fileID: -9202563880944679619}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  cname: '[NAME]'
-  text: 'Wow, what a nice panda. I hope I can get to know him a little more.  '
---- !u!114 &-8915188052641174839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a8ed627a2f3c4643878b0072b93038d, type: 3}
-  m_Name: Selection
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 88, y: -904}
-  ports:
-    keys:
-    - enter
-    - exit
-    - exit1
-    - exit2
-    - exit3
-    values:
-    - _fieldName: enter
-      _node: {fileID: -8915188052641174839}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: exit
-        node: {fileID: 3776066905102829031}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit
-      _node: {fileID: -8915188052641174839}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: enter
-        node: {fileID: -2886016650534639150}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit1
-      _node: {fileID: -8915188052641174839}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: enter
-        node: {fileID: 2786344442067932267}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit2
-      _node: {fileID: -8915188052641174839}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit3
-      _node: {fileID: -8915188052641174839}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  sel: 0
---- !u!114 &-8842696893553029722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2a33fc194ba4f54a8ea33fa6652a483, type: 3}
-  m_Name: Story
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -472, y: -920}
-  ports:
-    keys:
-    - enter
-    - exit
-    - exit1
-    - exit2
-    - exit3
-    values:
-    - _fieldName: enter
-      _node: {fileID: -8842696893553029722}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: exit
-        node: {fileID: 2694591552847709557}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit
-      _node: {fileID: -8842696893553029722}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: enter
-        node: {fileID: 3776066905102829031}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit1
-      _node: {fileID: -8842696893553029722}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit2
-      _node: {fileID: -8842696893553029722}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit3
-      _node: {fileID: -8842696893553029722}
+      _node: {fileID: -8449573996443474929}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -226,7 +77,7 @@ MonoBehaviour:
   text: 'You sit at the bar in the Interdimensional Ice Cream parlor, watching the
     Ice Cream Bartender scoop cones and mix sundaes. A surreal atmosphere surrounds
     you, and the walls seem to shift and move as if alive. '
---- !u!114 &-8148660093802488746
+--- !u!114 &-8284305815995565476
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -239,7 +90,7 @@ MonoBehaviour:
   m_Name: Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1720, y: -1112}
+  position: {x: 619.7065, y: -1029.2605}
   ports:
     keys:
     - enter
@@ -249,103 +100,31 @@ MonoBehaviour:
     - exit3
     values:
     - _fieldName: enter
-      _node: {fileID: -8148660093802488746}
+      _node: {fileID: -8284305815995565476}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: exit
-        node: {fileID: -7435603486089339749}
+        node: {fileID: -2782963797816099729}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
-      _node: {fileID: -8148660093802488746}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit1
-      _node: {fileID: -8148660093802488746}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit2
-      _node: {fileID: -8148660093802488746}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit3
-      _node: {fileID: -8148660093802488746}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  cname: Disuko
-  text: "Honestly, I think Steven deserves to be shot, wow, I can\u2019t even fathom--  "
---- !u!114 &-7645548612579042633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2a33fc194ba4f54a8ea33fa6652a483, type: 3}
-  m_Name: Story
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 600, y: -1112}
-  ports:
-    keys:
-    - enter
-    - exit
-    - exit1
-    - exit2
-    - exit3
-    values:
-    - _fieldName: enter
-      _node: {fileID: -7645548612579042633}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: exit
-        node: {fileID: -2886016650534639150}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit
-      _node: {fileID: -7645548612579042633}
+      _node: {fileID: -8284305815995565476}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: enter
-        node: {fileID: 291202872591744092}
+        node: {fileID: -7094863025041862637}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit1
-      _node: {fileID: -7645548612579042633}
+      _node: {fileID: -8284305815995565476}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -354,7 +133,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit2
-      _node: {fileID: -7645548612579042633}
+      _node: {fileID: -8284305815995565476}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -363,7 +142,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit3
-      _node: {fileID: -7645548612579042633}
+      _node: {fileID: -8284305815995565476}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -373,52 +152,7 @@ MonoBehaviour:
       _dynamic: 0
   cname: Disuko
   text: god, people actually name their kids Steven?
---- !u!114 &-7532302453007396508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dc954e8e7b9fbe4386af7f09201c9f1, type: 3}
-  m_Name: Story Event
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 488, y: -440}
-  ports:
-    keys:
-    - PreviousEvent
-    - NextEvent
-    values:
-    - _fieldName: PreviousEvent
-      _node: {fileID: -7532302453007396508}
-      _typeQualifiedName: Event, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: NextEvent
-        node: {fileID: 793365202726835530}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: NextEvent
-      _node: {fileID: -7532302453007396508}
-      _typeQualifiedName: Event, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  PreviousEvent: {fileID: 0}
-  NextEvent: {fileID: 0}
-  data:
-    name: Disuko
-    dialogue: I like panda sex!
---- !u!114 &-7435603486089339749
+--- !u!114 &-7172899928935920657
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -431,7 +165,7 @@ MonoBehaviour:
   m_Name: Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1496, y: -1112}
+  position: {x: 395.70648, y: -613.2605}
   ports:
     keys:
     - enter
@@ -441,31 +175,31 @@ MonoBehaviour:
     - exit3
     values:
     - _fieldName: enter
-      _node: {fileID: -7435603486089339749}
+      _node: {fileID: -7172899928935920657}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
-      - fieldName: exit
-        node: {fileID: -1243181633161305928}
+      - fieldName: exit1
+        node: {fileID: -4995550173458630174}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
-      _node: {fileID: -7435603486089339749}
+      _node: {fileID: -7172899928935920657}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: enter
-        node: {fileID: -8148660093802488746}
+        node: {fileID: 1931531709890373030}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit1
-      _node: {fileID: -7435603486089339749}
+      _node: {fileID: -7172899928935920657}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -474,7 +208,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit2
-      _node: {fileID: -7435603486089339749}
+      _node: {fileID: -7172899928935920657}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -483,112 +217,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit3
-      _node: {fileID: -7435603486089339749}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  cname: Customer
-  text: "wow yeah sure yeah that really is a really bad name i\u2019d say"
---- !u!114 &-3129019167130673920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 699756de2be0ff946a5861958fd4011d, type: 3}
-  m_Name: Entry
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -488, y: -440}
-  ports:
-    keys:
-    - NextEvent
-    values:
-    - _fieldName: NextEvent
-      _node: {fileID: -3129019167130673920}
-      _typeQualifiedName: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: PreviousEvent
-        node: {fileID: 793365202726835530}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  NextEvent: {fileID: 0}
---- !u!114 &-2886016650534639150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2a33fc194ba4f54a8ea33fa6652a483, type: 3}
-  m_Name: Story
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 376, y: -1112}
-  ports:
-    keys:
-    - enter
-    - exit
-    - exit1
-    - exit2
-    - exit3
-    values:
-    - _fieldName: enter
-      _node: {fileID: -2886016650534639150}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: exit
-        node: {fileID: -8915188052641174839}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit
-      _node: {fileID: -2886016650534639150}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: enter
-        node: {fileID: -7645548612579042633}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit1
-      _node: {fileID: -2886016650534639150}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit2
-      _node: {fileID: -2886016650534639150}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit3
-      _node: {fileID: -2886016650534639150}
+      _node: {fileID: -7172899928935920657}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -597,9 +226,9 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   cname: Disuko
-  text: "Steven? Seriously? That\u2019s genuinely terrible. I\u2019m actually sick
-    to my stomach hearing that. I think I\u2019ve lost my appetite. Wow\u2014 "
---- !u!114 &-2324753159428978691
+  text: "[NAME] huh? That\u2019s a really nice sounding name. (Smug) Almost as nice
+    sounding as my latest single release.  "
+--- !u!114 &-7094863025041862637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -612,7 +241,7 @@ MonoBehaviour:
   m_Name: Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1048, y: -1112}
+  position: {x: 843.7065, y: -1029.2605}
   ports:
     keys:
     - enter
@@ -622,31 +251,31 @@ MonoBehaviour:
     - exit3
     values:
     - _fieldName: enter
-      _node: {fileID: -2324753159428978691}
+      _node: {fileID: -7094863025041862637}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: exit
-        node: {fileID: 291202872591744092}
+        node: {fileID: -8284305815995565476}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
-      _node: {fileID: -2324753159428978691}
+      _node: {fileID: -7094863025041862637}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: enter
-        node: {fileID: -1243181633161305928}
+        node: {fileID: 4375370321988577725}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit1
-      _node: {fileID: -2324753159428978691}
+      _node: {fileID: -7094863025041862637}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -655,7 +284,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit2
-      _node: {fileID: -2324753159428978691}
+      _node: {fileID: -7094863025041862637}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -664,82 +293,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit3
-      _node: {fileID: -2324753159428978691}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  cname: Steven
-  text: "\u2026"
---- !u!114 &-1243181633161305928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2a33fc194ba4f54a8ea33fa6652a483, type: 3}
-  m_Name: Story
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 1272, y: -1112}
-  ports:
-    keys:
-    - enter
-    - exit
-    - exit1
-    - exit2
-    - exit3
-    values:
-    - _fieldName: enter
-      _node: {fileID: -1243181633161305928}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: exit
-        node: {fileID: -2324753159428978691}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit
-      _node: {fileID: -1243181633161305928}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: enter
-        node: {fileID: -7435603486089339749}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit1
-      _node: {fileID: -1243181633161305928}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit2
-      _node: {fileID: -1243181633161305928}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit3
-      _node: {fileID: -1243181633161305928}
+      _node: {fileID: -7094863025041862637}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -748,9 +302,8 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   cname: Disuko
-  text: "really? Steven? I don\u2019t even know what to say, (New text box) Hey!
-    Everyone! This guy is named Steven! Steven!! Isn\u2019t that awful? "
---- !u!114 &-982541821237903371
+  text: "I can\u2019t even imagine "
+--- !u!114 &-4995550173458630174
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -763,7 +316,7 @@ MonoBehaviour:
   m_Name: Selection
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 824, y: -696}
+  position: {x: 107.70648, y: -821.2605}
   ports:
     keys:
     - enter
@@ -773,40 +326,43 @@ MonoBehaviour:
     - exit3
     values:
     - _fieldName: enter
-      _node: {fileID: -982541821237903371}
+      _node: {fileID: -4995550173458630174}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: exit
-        node: {fileID: 735656291172491974}
+        node: {fileID: -1077615974411102343}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
-      _node: {fileID: -982541821237903371}
+      _node: {fileID: -4995550173458630174}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: enter
-        node: {fileID: 3250787265118768687}
+        node: {fileID: -2782963797816099729}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit1
-      _node: {fileID: -982541821237903371}
+      _node: {fileID: -4995550173458630174}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: enter
+        node: {fileID: -7172899928935920657}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit2
-      _node: {fileID: -982541821237903371}
+      _node: {fileID: -4995550173458630174}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -815,7 +371,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit3
-      _node: {fileID: -982541821237903371}
+      _node: {fileID: -4995550173458630174}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -823,236 +379,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  sel: 1
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81f0f7ea3bd105d4fb2b80d07ba9db5d, type: 3}
-  m_Name: Act 1
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: -8842696893553029722}
-  - {fileID: 2694591552847709557}
-  - {fileID: 3776066905102829031}
-  - {fileID: -2886016650534639150}
-  - {fileID: -7645548612579042633}
-  - {fileID: 291202872591744092}
-  - {fileID: -2324753159428978691}
-  - {fileID: -1243181633161305928}
-  - {fileID: -7435603486089339749}
-  - {fileID: -8148660093802488746}
-  - {fileID: 2786344442067932267}
-  - {fileID: 735656291172491974}
-  - {fileID: 3250787265118768687}
-  - {fileID: -9202563880944679619}
-  - {fileID: -8915188052641174839}
-  - {fileID: -982541821237903371}
-  current: {fileID: -9202563880944679619}
---- !u!114 &291202872591744092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2a33fc194ba4f54a8ea33fa6652a483, type: 3}
-  m_Name: Story
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 824, y: -1112}
-  ports:
-    keys:
-    - enter
-    - exit
-    - exit1
-    - exit2
-    - exit3
-    values:
-    - _fieldName: enter
-      _node: {fileID: 291202872591744092}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: exit
-        node: {fileID: -7645548612579042633}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit
-      _node: {fileID: 291202872591744092}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: enter
-        node: {fileID: -2324753159428978691}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit1
-      _node: {fileID: 291202872591744092}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit2
-      _node: {fileID: 291202872591744092}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit3
-      _node: {fileID: 291202872591744092}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  cname: Disuko
-  text: "I can\u2019t even imagine "
---- !u!114 &735656291172491974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2a33fc194ba4f54a8ea33fa6652a483, type: 3}
-  m_Name: Story
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 600, y: -696}
-  ports:
-    keys:
-    - enter
-    - exit
-    - exit1
-    - exit2
-    - exit3
-    values:
-    - _fieldName: enter
-      _node: {fileID: 735656291172491974}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: exit
-        node: {fileID: 2786344442067932267}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit
-      _node: {fileID: 735656291172491974}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: enter
-        node: {fileID: -982541821237903371}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit1
-      _node: {fileID: 735656291172491974}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit2
-      _node: {fileID: 735656291172491974}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit3
-      _node: {fileID: 735656291172491974}
-      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  cname: Disuko
-  text: "So, what\u2019s your favorite ice cream flavor? "
---- !u!114 &793365202726835530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dc954e8e7b9fbe4386af7f09201c9f1, type: 3}
-  m_Name: Story Event
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 248, y: -440}
-  ports:
-    keys:
-    - PreviousEvent
-    - NextEvent
-    values:
-    - _fieldName: PreviousEvent
-      _node: {fileID: 793365202726835530}
-      _typeQualifiedName: Event, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: NextEvent
-        node: {fileID: -3129019167130673920}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: NextEvent
-      _node: {fileID: 793365202726835530}
-      _typeQualifiedName: Event, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: PreviousEvent
-        node: {fileID: -7532302453007396508}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  PreviousEvent: {fileID: 0}
-  NextEvent: {fileID: 0}
-  data:
-    name: Sex
-    dialogue: Sex
---- !u!114 &2694591552847709557
+  sel: 0
+--- !u!114 &-4896122945074107719
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1065,7 +393,7 @@ MonoBehaviour:
   m_Name: Event
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -696, y: -920}
+  position: {x: -676.2935, y: -837.2605}
   ports:
     keys:
     - enter
@@ -1075,7 +403,7 @@ MonoBehaviour:
     - exit3
     values:
     - _fieldName: enter
-      _node: {fileID: 2694591552847709557}
+      _node: {fileID: -4896122945074107719}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -1084,19 +412,19 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
-      _node: {fileID: 2694591552847709557}
+      _node: {fileID: -4896122945074107719}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: enter
-        node: {fileID: -8842696893553029722}
+        node: {fileID: -8449573996443474929}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit1
-      _node: {fileID: 2694591552847709557}
+      _node: {fileID: -4896122945074107719}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -1105,7 +433,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit2
-      _node: {fileID: 2694591552847709557}
+      _node: {fileID: -4896122945074107719}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -1114,7 +442,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit3
-      _node: {fileID: 2694591552847709557}
+      _node: {fileID: -4896122945074107719}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -1122,7 +450,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
---- !u!114 &2786344442067932267
+--- !u!114 &-3357334473212643061
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1135,7 +463,7 @@ MonoBehaviour:
   m_Name: Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 376, y: -696}
+  position: {x: 1291.7065, y: -613.2605}
   ports:
     keys:
     - enter
@@ -1145,31 +473,28 @@ MonoBehaviour:
     - exit3
     values:
     - _fieldName: enter
-      _node: {fileID: 2786344442067932267}
+      _node: {fileID: -3357334473212643061}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
-      - fieldName: exit1
-        node: {fileID: -8915188052641174839}
+      - fieldName: exit
+        node: {fileID: 4565314496386301426}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
-      _node: {fileID: 2786344442067932267}
+      _node: {fileID: -3357334473212643061}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections:
-      - fieldName: enter
-        node: {fileID: 735656291172491974}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit1
-      _node: {fileID: 2786344442067932267}
+      _node: {fileID: -3357334473212643061}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -1178,7 +503,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit2
-      _node: {fileID: 2786344442067932267}
+      _node: {fileID: -3357334473212643061}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -1187,7 +512,82 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit3
-      _node: {fileID: 2786344442067932267}
+      _node: {fileID: -3357334473212643061}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  cname: '[NAME]'
+  text: 'Wow, what a nice panda. I hope I can get to know him a little more.  '
+--- !u!114 &-2782963797816099729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a33fc194ba4f54a8ea33fa6652a483, type: 3}
+  m_Name: Story
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 395.70648, y: -1029.2605}
+  ports:
+    keys:
+    - enter
+    - exit
+    - exit1
+    - exit2
+    - exit3
+    values:
+    - _fieldName: enter
+      _node: {fileID: -2782963797816099729}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: exit
+        node: {fileID: -4995550173458630174}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: -2782963797816099729}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: -8284305815995565476}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit1
+      _node: {fileID: -2782963797816099729}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit2
+      _node: {fileID: -2782963797816099729}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit3
+      _node: {fileID: -2782963797816099729}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -1196,9 +596,9 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   cname: Disuko
-  text: "[NAME] huh? That\u2019s a really nice sounding name. (Smug) Almost as nice
-    sounding as my latest single release.  "
---- !u!114 &3250787265118768687
+  text: "Steven? Seriously? That\u2019s genuinely terrible. I\u2019m actually sick
+    to my stomach hearing that. I think I\u2019ve lost my appetite. Wow\u2014 "
+--- !u!114 &-2714910624808186402
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1211,7 +611,7 @@ MonoBehaviour:
   m_Name: Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1048, y: -696}
+  position: {x: 1291.7065, y: -1029.2605}
   ports:
     keys:
     - enter
@@ -1221,31 +621,31 @@ MonoBehaviour:
     - exit3
     values:
     - _fieldName: enter
-      _node: {fileID: 3250787265118768687}
+      _node: {fileID: -2714910624808186402}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: exit
-        node: {fileID: -982541821237903371}
+        node: {fileID: 4375370321988577725}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
-      _node: {fileID: 3250787265118768687}
+      _node: {fileID: -2714910624808186402}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: enter
-        node: {fileID: -9202563880944679619}
+        node: {fileID: 6940925038533663523}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit1
-      _node: {fileID: 3250787265118768687}
+      _node: {fileID: -2714910624808186402}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -1254,7 +654,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit2
-      _node: {fileID: 3250787265118768687}
+      _node: {fileID: -2714910624808186402}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -1263,7 +663,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit3
-      _node: {fileID: 3250787265118768687}
+      _node: {fileID: -2714910624808186402}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -1272,9 +672,9 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   cname: Disuko
-  text: "Heck yeah! I also love [ICE CREAM FLAVOR]. Hey, yknow what, I have the perfect
-    vibe for that, I\u2019ll be right back. "
---- !u!114 &3776066905102829031
+  text: "really? Steven? I don\u2019t even know what to say, (New text box) Hey!
+    Everyone! This guy is named Steven! Steven!! Isn\u2019t that awful? "
+--- !u!114 &-1077615974411102343
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1287,7 +687,7 @@ MonoBehaviour:
   m_Name: Story
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -200, y: -920}
+  position: {x: -180.29352, y: -837.2605}
   ports:
     keys:
     - enter
@@ -1297,31 +697,31 @@ MonoBehaviour:
     - exit3
     values:
     - _fieldName: enter
-      _node: {fileID: 3776066905102829031}
+      _node: {fileID: -1077615974411102343}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: exit
-        node: {fileID: -8842696893553029722}
+        node: {fileID: -8449573996443474929}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
-      _node: {fileID: 3776066905102829031}
+      _node: {fileID: -1077615974411102343}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: enter
-        node: {fileID: -8915188052641174839}
+        node: {fileID: -4995550173458630174}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit1
-      _node: {fileID: 3776066905102829031}
+      _node: {fileID: -1077615974411102343}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -1330,7 +730,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit2
-      _node: {fileID: 3776066905102829031}
+      _node: {fileID: -1077615974411102343}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -1339,7 +739,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit3
-      _node: {fileID: 3776066905102829031}
+      _node: {fileID: -1077615974411102343}
       _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -1350,3 +750,480 @@ MonoBehaviour:
   cname: Disuko
   text: "Can\u2019t decide on a flavor, huh? Same here. I\u2019m Disuko, by the way.
     What\u2019s your name? "
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81f0f7ea3bd105d4fb2b80d07ba9db5d, type: 3}
+  m_Name: Scene 1 - Beginnings
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -8449573996443474929}
+  - {fileID: -4896122945074107719}
+  - {fileID: -1077615974411102343}
+  - {fileID: -2782963797816099729}
+  - {fileID: -8284305815995565476}
+  - {fileID: -7094863025041862637}
+  - {fileID: 4375370321988577725}
+  - {fileID: -2714910624808186402}
+  - {fileID: 6940925038533663523}
+  - {fileID: 3757591262187225135}
+  - {fileID: -7172899928935920657}
+  - {fileID: 1931531709890373030}
+  - {fileID: 4565314496386301426}
+  - {fileID: -3357334473212643061}
+  - {fileID: -4995550173458630174}
+  - {fileID: 5270068699937963495}
+  current: {fileID: 0}
+--- !u!114 &1931531709890373030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a33fc194ba4f54a8ea33fa6652a483, type: 3}
+  m_Name: Story
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 619.7065, y: -613.2605}
+  ports:
+    keys:
+    - enter
+    - exit
+    - exit1
+    - exit2
+    - exit3
+    values:
+    - _fieldName: enter
+      _node: {fileID: 1931531709890373030}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: exit
+        node: {fileID: -7172899928935920657}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 1931531709890373030}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 5270068699937963495}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit1
+      _node: {fileID: 1931531709890373030}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit2
+      _node: {fileID: 1931531709890373030}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit3
+      _node: {fileID: 1931531709890373030}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  cname: Disuko
+  text: "So, what\u2019s your favorite ice cream flavor? "
+--- !u!114 &3757591262187225135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a33fc194ba4f54a8ea33fa6652a483, type: 3}
+  m_Name: Story
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1739.7065, y: -1029.2605}
+  ports:
+    keys:
+    - enter
+    - exit
+    - exit1
+    - exit2
+    - exit3
+    values:
+    - _fieldName: enter
+      _node: {fileID: 3757591262187225135}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: exit
+        node: {fileID: 6940925038533663523}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 3757591262187225135}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit1
+      _node: {fileID: 3757591262187225135}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit2
+      _node: {fileID: 3757591262187225135}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit3
+      _node: {fileID: 3757591262187225135}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  cname: Disuko
+  text: "Honestly, I think Steven deserves to be shot, wow, I can\u2019t even fathom--  "
+--- !u!114 &4375370321988577725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a33fc194ba4f54a8ea33fa6652a483, type: 3}
+  m_Name: Story
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1067.7065, y: -1029.2605}
+  ports:
+    keys:
+    - enter
+    - exit
+    - exit1
+    - exit2
+    - exit3
+    values:
+    - _fieldName: enter
+      _node: {fileID: 4375370321988577725}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: exit
+        node: {fileID: -7094863025041862637}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 4375370321988577725}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: -2714910624808186402}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit1
+      _node: {fileID: 4375370321988577725}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit2
+      _node: {fileID: 4375370321988577725}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit3
+      _node: {fileID: 4375370321988577725}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  cname: Steven
+  text: "\u2026"
+--- !u!114 &4565314496386301426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a33fc194ba4f54a8ea33fa6652a483, type: 3}
+  m_Name: Story
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1067.7065, y: -613.2605}
+  ports:
+    keys:
+    - enter
+    - exit
+    - exit1
+    - exit2
+    - exit3
+    values:
+    - _fieldName: enter
+      _node: {fileID: 4565314496386301426}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: exit
+        node: {fileID: 5270068699937963495}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 4565314496386301426}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: -3357334473212643061}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit1
+      _node: {fileID: 4565314496386301426}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit2
+      _node: {fileID: 4565314496386301426}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit3
+      _node: {fileID: 4565314496386301426}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  cname: Disuko
+  text: "Heck yeah! I also love [ICE CREAM FLAVOR]. Hey, yknow what, I have the perfect
+    vibe for that, I\u2019ll be right back. "
+--- !u!114 &5270068699937963495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8ed627a2f3c4643878b0072b93038d, type: 3}
+  m_Name: Selection
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 843.7065, y: -613.2605}
+  ports:
+    keys:
+    - enter
+    - exit
+    - exit1
+    - exit2
+    - exit3
+    values:
+    - _fieldName: enter
+      _node: {fileID: 5270068699937963495}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: exit
+        node: {fileID: 1931531709890373030}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 5270068699937963495}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 4565314496386301426}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit1
+      _node: {fileID: 5270068699937963495}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit2
+      _node: {fileID: 5270068699937963495}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit3
+      _node: {fileID: 5270068699937963495}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  sel: 1
+--- !u!114 &6940925038533663523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a33fc194ba4f54a8ea33fa6652a483, type: 3}
+  m_Name: Story
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1515.7065, y: -1029.2605}
+  ports:
+    keys:
+    - enter
+    - exit
+    - exit1
+    - exit2
+    - exit3
+    values:
+    - _fieldName: enter
+      _node: {fileID: 6940925038533663523}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: exit
+        node: {fileID: -2714910624808186402}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 6940925038533663523}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 3757591262187225135}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit1
+      _node: {fileID: 6940925038533663523}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit2
+      _node: {fileID: 6940925038533663523}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit3
+      _node: {fileID: 6940925038533663523}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  cname: Customer
+  text: "wow yeah sure yeah that really is a really bad name i\u2019d say"
